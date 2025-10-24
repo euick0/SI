@@ -1,0 +1,10 @@
+CREATE USER 'abel' IDENTIFIED BY 'abel';
+GRANT ALL PRIVILEGES ON *.* TO 'abel';
+SHOW GRANTS FOR 'abel';
+ALTER USER 'abel' IDENTIFIED BY 'abel123';
+Revoke all On *.* from 'abel';
+Grant select on escola.notas to abel;
+Grant insert, update, delete on escola.alunos to abel;
+Grant all on escola.* to abel;
+Revoke all on escola.* from abel;
+Grant select(Nome, disciplinas) on escola.professores to abel;

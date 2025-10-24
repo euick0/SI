@@ -83,14 +83,14 @@ INSERT INTO JOGADORES (j_numero, j_nome, j_idade) VALUES
     (8366, 'Gomes', 33);
 
 CREATE TABLE FILIAÇÃO (
-    f_iggador INT NOT NULL,
+    f_jogador INT NOT NULL,
     f_equipa INT NOT NULL,
     f_anos INT,
     f_media DECIMAL(4,3),
-    PRIMARY KEY (f_iggador, f_equipa)
+    PRIMARY KEY (f_jogador, f_equipa)
 );
 
-INSERT INTO FILIAÇÃO (f_iggador, f_equipa, f_anos, f_media) VALUES
+INSERT INTO FILIAÇÃO (f_jogador, f_equipa, f_anos, f_media) VALUES
     (358, 15, 5, 0.3),
     (358, 20, 3, 0.32),
     (523, 12, 10, 0.257),
@@ -123,5 +123,5 @@ select * FROM EXPERIÊNCIA where ex_tipo = 'juniores' or ex_anos > 10;
 select BOLAS.b_equipa FROM BOLAS where b_fabricante = 'Adidas';
 select * FROM BOLAS where b_fabricante = 'Reebok' or b_fabricante = 'Olimpic';
 select * From JOGADORES where LEFT(j_nome, 1) = 'S';
-select * from JOGADORES where j_idade < 30 and j_idade > 20;
-select * from JOGADORES where LEFT(j_nome, 1) = 'S' and Right(j_nome, 1) = 'a';
+select j_nome, j_idade from JOGADORES where j_idade < 30 and j_idade > 20;
+select j_nome from JOGADORES where LEFT(j_nome, 1) = 'S' and Right(j_nome, 1) = 'a';

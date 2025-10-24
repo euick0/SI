@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/2 ano/Trabalho final SI/Clientes.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/2 ano/Trabalho final SI/Empresas.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/2 ano/fevereiro/Ficha 1.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/2 ano/fevereiro/Ficha 3.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/2 ano/março/Ficha 5.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/2 ano/março/Ficha 6.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/3 ano/outubro/Eencomendas6.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/3 ano/outubro/Escola.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/3 ano/setembro/Ficha1.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/3 ano/setembro/TrabalhoAutonomo1.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/queries/Query.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/queries/permissoes.sql" dialect="MariaDB" />
     <file url="PROJECT" dialect="MySQL" />
   </component>
 </project>
