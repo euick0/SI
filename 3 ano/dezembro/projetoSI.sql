@@ -3,7 +3,7 @@ create database projetoSI;
 use projetoSi;
 
 create table user(
-    id int primary key AUTO_INCREMENT not null ,
+    id int unsigned key AUTO_INCREMENT not null ,
     username varchar(225) not null unique ,
     name varchar(225) not null ,
     email varchar(225) not null unique ,
