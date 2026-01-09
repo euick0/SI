@@ -3,7 +3,7 @@ create database projetoSI;
 use projetoSi;
 
 create table user(
-    id int unsigned key AUTO_INCREMENT not null ,
+    id int unsigned primary key AUTO_INCREMENT not null ,
     username varchar(225) not null unique ,
     name varchar(225) not null ,
     email varchar(225) not null unique ,
@@ -28,6 +28,26 @@ create table role_permissions(
     PRIMARY KEY(roleID, permissionID),
     FOREIGN KEY (roleID) references roles(roleID),
     FOREIGN KEY (permissionID) references permissions(permissionID)
+);
+
+create table courses(
+    courseID int primary key,
+    courseName varchar(255)
+);
+
+create table lessons(
+    lessonID int primary key,
+    lessonContent varchar(10000),
+    courseID int,
+    FOREIGN KEY (courseID) references courses(courseID)
+);
+
+create table user_courses(
+    id int unsigned,
+    courseID int,
+    PRIMARY KEY(id, courseID),
+    FOREIGN KEY (courseID) references courses(courseID),
+    FOREIGN KEY (id) references user(id)
 );
 
 insert into user(username, name, email, password, roleID) values
