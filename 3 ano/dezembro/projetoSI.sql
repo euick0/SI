@@ -37,7 +37,7 @@ create table courses(
 
 create table lessons(
     lessonID int primary key,
-    lessonContent varchar(10000),
+    lessonContent varchar(50000),
     courseID int,
     FOREIGN KEY (courseID) references courses(courseID)
 );
@@ -64,3 +64,6 @@ insert into permissions values
 insert into role_permissions values
     (1, 1),
     (3, 3);
+
+insert into courses values
+    (1, 'Russian')
