@@ -66,4 +66,6 @@ insert into role_permissions values
     (3, 3);
 
 insert into courses values
-    (1, 'Russian')
+    (1, 'Russian'),
+    (2, 'English'),
+    (3, 'French')
