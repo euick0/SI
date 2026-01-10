@@ -38,8 +38,7 @@ create table courses(
 create table lessons(
     lessonID int primary key,
     lessonContent varchar(50000),
-    courseID int,
-    FOREIGN KEY (courseID) references courses(courseID)
+    courseID int
 );
 
 create table user_courses(
