@@ -37,6 +37,7 @@ create table courses(
 
 create table lessons(
     lessonID int primary key,
+    lessonName varchar(255),
     lessonContent varchar(50000),
     courseID int
 );
