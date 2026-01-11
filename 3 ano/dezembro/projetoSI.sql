@@ -68,4 +68,12 @@ insert into role_permissions values
 insert into courses values
     (1, 'Russian'),
     (2, 'English'),
-    (3, 'French')
+    (3, 'French');
+
+insert into lessons values
+    (1, 'Russian Lesson 1', 'Content for Russian Lesson 1', 1),
+    (2, 'Russian Lesson 2', 'Content for Russian Lesson 2', 1),
+    (3, 'English Lesson 1', 'Content for English Lesson 1', 2),
+    (4, 'English Lesson 2', 'Content for English Lesson 2', 2),
+    (5, 'French Lesson 1', 'Content for French Lesson 1', 3),
+    (6, 'French Lesson 2', 'Content for French Lesson 2', 3);
